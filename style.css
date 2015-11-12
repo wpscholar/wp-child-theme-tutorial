@@ -24,3 +24,21 @@ nav.footer-menu li {
 nav.footer-menu li:first-child {
     margin-left: 0;
 }
+
+.sidebar-footer {
+    margin-bottom: 2em;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar-footer aside {
+    margin-bottom: 3em;
+    padding: 0;
+}
+
+.sidebar-footer .widgettitle {
+    color: #333;
+    text-transform: uppercase;
+    font-family: "Noto Sans", sans-serif;
+    margin-bottom: 1.5em;
+    letter-spacing: 0.04em;
+}
