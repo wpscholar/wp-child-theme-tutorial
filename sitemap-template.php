@@ -32,7 +32,19 @@ the_post();
 				) );
 				?>
 
-				<?php the_content(); ?>
+				<?php if ( $query->have_posts() ): ?>
+					<ul>
+						<?php while ( $query->have_posts() ): ?>
+							<?php $query->the_post(); ?>
+							<li>
+								<a href="<?php echo get_the_permalink( $query->post ) ?>">
+									<?php echo get_the_title( $query->post ); ?>
+								</a>
+							</li>
+						<?php endwhile; ?>
+					</ul>
+				<?php endif; ?>
+
 			</div><!-- .entry-content -->
 
 			<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>
