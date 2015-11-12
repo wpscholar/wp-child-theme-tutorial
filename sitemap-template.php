@@ -45,6 +45,8 @@ the_post();
 					</ul>
 				<?php endif; ?>
 
+				<?php wp_reset_postdata(); ?>
+
 			</div><!-- .entry-content -->
 
 			<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>
