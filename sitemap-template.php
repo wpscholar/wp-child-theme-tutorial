@@ -38,7 +38,7 @@ the_post();
 							<?php $query->the_post(); ?>
 							<li>
 								<a href="<?php echo get_the_permalink( $query->post ) ?>">
-									<?php echo get_the_title( $query->post ); ?>
+									<?php echo esc_html( get_the_title( $query->post ) ); ?>
 								</a>
 							</li>
 						<?php endwhile; ?>
