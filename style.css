@@ -10,3 +10,17 @@
  * Text Domain: twentyfifteen-child
  * Template: twentyfifteen
  */
+
+nav.footer-menu ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+nav.footer-menu li {
+    display: inline-block;
+    margin-left: .5em;
+}
+
+nav.footer-menu li:first-child {
+    margin-left: 0;
+}
