@@ -21,6 +21,17 @@ the_post();
 			</header><!-- .entry-header -->
 
 			<div class="entry-content">
+
+				<?php
+				$query = new WP_Query( array(
+					'post_type'   => array( 'post', 'page' ),
+					'post_status' => 'publish',
+					'orderby'     => 'title menu_order',
+					'order'       => 'ASC',
+					'nopaging'    => true
+				) );
+				?>
+
 				<?php the_content(); ?>
 			</div><!-- .entry-content -->
 
