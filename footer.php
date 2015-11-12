@@ -15,6 +15,8 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<?php
+				get_sidebar('footer');
+
 				wp_nav_menu( array(
 					'theme_location'  => 'footer_menu',
 					'container'       => 'nav',
